@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    
+    <div id="simpleModal" class="modal">
+        <div class="modal-content">
+            <div class="form-popup" id="myForm">
+                <div class="form-container">
+                    <h2>회원 로그인</h2>
+                    <label for="id"><b>회원 아이디</b></label>
+                    <br>
+                    <input id="memberId" type="text" placeholder="회원번호 또는 전화번호(8자리) 입력" name="id" autofocus required>
+                    <br>
+                    <label for="pass"><b>비밀 번호</b></label>
+					<br>
+                    <input id="memberPass" type="password" placeholder="비밀번호 입력" name="pass" required>
+                    <br>
+                    <button type="submit" class="btn submit"><b>로그인</b></button>
+                    <button type="button" class="btn cancel"><b>닫기</b></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="popupLogin.js" type="module"></script>
+</body>
+</html>
